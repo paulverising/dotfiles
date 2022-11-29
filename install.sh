@@ -37,3 +37,8 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 #Install Neovim
 brew install neovim
+
+#Stow dotfiles
+stow git
+stow nvim
+stow zsh
