@@ -13,3 +13,7 @@ mouse-swaps-windows: true
 # Add 10px margin between windows
 window-margins: true
 window-margin-size: 3
+
+# Define which windows should be tiled
+floating-is-blacklist: false
+floating: ["com.hnc.Discord", "org.mozilla.firefox", "com.google.Chrome", "com.jetbrains.intellij", "com.googlecode.iterm2", "com.apple.mail", "com.apple.MobileSMS", "com.microsoft.Excel", "com.microsoft.Powerpoint", "com.microsoft.Word", "com.jetbrains.pycharm", "com.apple.Safari", "com.timespeck.slackmacgap", "com.sublimetext.4", "com.microsoft.VSCode", "com.jetbrains.WebStorm"]
