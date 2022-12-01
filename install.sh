@@ -27,6 +27,9 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 #Install Neovim
 brew install neovim
 
+#Install karabiner
+brew install --cask karabiner-elements
+
 #Stow dotfiles
 if test ~/.gitconfig; then mv ~/.gitconfig ~/.gitconfig-bak; fi
 stow git
@@ -34,3 +37,5 @@ if test ~/.config/nvim; then mv ~/.config/nvim ~/.config/nvim-bak; fi
 stow nvim
 if test ~/.zshrc; then mv ~/.zshrc ~/.zshrc-bak; fi
 stow zsh
+if test ~/.config/karabiner; then mv ~/.config/karabiner ~/.config/karabiner-bak; fi
+stow karabiner
