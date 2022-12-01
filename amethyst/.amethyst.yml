@@ -1,0 +1,15 @@
+# Use tall, wide, and fullscreen layouts
+layouts:
+    - tall
+    - fullscreen
+    - wide
+
+# Enable focus-follows-mouse
+mouse-follows-focus: false
+focus-follows-mouse: false
+mouse-resizes-windows: true
+mouse-swaps-windows: true
+
+# Add 10px margin between windows
+window-margins: true
+window-margin-size: 3

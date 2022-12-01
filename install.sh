@@ -30,6 +30,9 @@ brew install neovim
 #Install karabiner
 brew install --cask karabiner-elements
 
+#Install amethyst
+brew install --cask amethyst
+
 #Stow dotfiles
 if test ~/.gitconfig; then mv ~/.gitconfig ~/.gitconfig-bak; fi
 stow git
@@ -39,3 +42,5 @@ if test ~/.zshrc; then mv ~/.zshrc ~/.zshrc-bak; fi
 stow zsh
 if test ~/.config/karabiner; then mv ~/.config/karabiner ~/.config/karabiner-bak; fi
 stow karabiner
+if test ~/.amethyst.yml; then mv ~/.amethyst.yml ~/.amethyst-bak.yml; fi
+stow amethyst
