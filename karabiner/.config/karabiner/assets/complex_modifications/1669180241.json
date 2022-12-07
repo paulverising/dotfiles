@@ -233,7 +233,7 @@
       ]
     },
     {
-      "description": "O-Launcher",
+      "description": "0-Launcher",
       "manipulators": [
         {
           "type": "basic",
@@ -264,7 +264,7 @@
           "from": {
             "simultaneous": [
               {
-                "key_code": "o"
+                "key_code": "0"
               },
               {
                 "key_code": "c"
@@ -307,75 +307,6 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "b",
-            "modifiers": {
-              "mandatory": [],
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "shell_command": "open -a 'Safari.app'"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "variable_if",
-              "name": "launcher_mode",
-              "value": 1
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "simultaneous": [
-              {
-                "key_code": "o"
-              },
-              {
-                "key_code": "b"
-              }
-            ],
-            "simultaneous_options": {
-              "key_down_order": "strict",
-              "key_up_order": "strict_inverse",
-              "to_after_key_up": [
-                {
-                  "set_variable": {
-                    "name": "launcher_mode",
-                    "value": 0
-                  }
-                }
-              ]
-            },
-            "modifiers": {
-              "mandatory": [],
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "set_variable": {
-                "name": "launcher_mode",
-                "value": 1
-              }
-            },
-            {
-              "shell_command": "open -a 'Safari.app'"
-            }
-          ],
-          "parameters": {
-            "basic.simultaneous_threshold_milliseconds": 500
-          }
-        },
-        {
-          "type": "basic",
-          "from": {
             "key_code": "a",
             "modifiers": {
               "mandatory": [],
@@ -402,7 +333,7 @@
           "from": {
             "simultaneous": [
               {
-                "key_code": "o"
+                "key_code": "0"
               },
               {
                 "key_code": "a"
@@ -471,7 +402,7 @@
           "from": {
             "simultaneous": [
               {
-                "key_code": "o"
+                "key_code": "0"
               },
               {
                 "key_code": "v"
@@ -514,75 +445,6 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "i",
-            "modifiers": {
-              "mandatory": [],
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "shell_command": "open -a 'iTerm.app'"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "variable_if",
-              "name": "launcher_mode",
-              "value": 1
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "simultaneous": [
-              {
-                "key_code": "o"
-              },
-              {
-                "key_code": "i"
-              }
-            ],
-            "simultaneous_options": {
-              "key_down_order": "strict",
-              "key_up_order": "strict_inverse",
-              "to_after_key_up": [
-                {
-                  "set_variable": {
-                    "name": "launcher_mode",
-                    "value": 0
-                  }
-                }
-              ]
-            },
-            "modifiers": {
-              "mandatory": [],
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "set_variable": {
-                "name": "launcher_mode",
-                "value": 1
-              }
-            },
-            {
-              "shell_command": "open -a 'iTerm.app'"
-            }
-          ],
-          "parameters": {
-            "basic.simultaneous_threshold_milliseconds": 500
-          }
-        },
-        {
-          "type": "basic",
-          "from": {
             "key_code": "t",
             "modifiers": {
               "mandatory": [],
@@ -593,7 +455,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'Sublime Text.app'"
+              "shell_command": "open -a 'iTerm.app'"
             }
           ],
           "conditions": [
@@ -609,7 +471,7 @@
           "from": {
             "simultaneous": [
               {
-                "key_code": "o"
+                "key_code": "0"
               },
               {
                 "key_code": "t"
@@ -642,7 +504,7 @@
               }
             },
             {
-              "shell_command": "open -a 'Sublime Text.app'"
+              "shell_command": "open -a 'iTerm.app'"
             }
           ],
           "parameters": {
@@ -678,7 +540,7 @@
           "from": {
             "simultaneous": [
               {
-                "key_code": "o"
+                "key_code": "0"
               },
               {
                 "key_code": "s"
@@ -747,7 +609,7 @@
           "from": {
             "simultaneous": [
               {
-                "key_code": "o"
+                "key_code": "0"
               },
               {
                 "key_code": "f"
@@ -790,7 +652,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "m",
+            "key_code": "d",
             "modifiers": {
               "mandatory": [],
               "optional": [
@@ -816,10 +678,10 @@
           "from": {
             "simultaneous": [
               {
-                "key_code": "o"
+                "key_code": "0"
               },
               {
-                "key_code": "m"
+                "key_code": "d"
               }
             ],
             "simultaneous_options": {
