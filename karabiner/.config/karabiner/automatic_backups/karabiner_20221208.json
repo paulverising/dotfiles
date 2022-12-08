@@ -732,75 +732,6 @@
                                     }
                                 ],
                                 "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "launcher_mode",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "z",
-                                    "modifiers": {
-                                        "mandatory": [],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "shell_command": "open -a 'Zoom.us'"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "modifiers": {
-                                        "mandatory": [],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    },
-                                    "simultaneous": [
-                                        {
-                                            "key_code": "0"
-                                        },
-                                        {
-                                            "key_code": "z"
-                                        }
-                                    ],
-                                    "simultaneous_options": {
-                                        "key_down_order": "strict",
-                                        "key_up_order": "strict_inverse",
-                                        "to_after_key_up": [
-                                            {
-                                                "set_variable": {
-                                                    "name": "launcher_mode",
-                                                    "value": 0
-                                                }
-                                            }
-                                        ]
-                                    }
-                                },
-                                "parameters": {
-                                    "basic.simultaneous_threshold_milliseconds": 500
-                                },
-                                "to": [
-                                    {
-                                        "set_variable": {
-                                            "name": "launcher_mode",
-                                            "value": 1
-                                        }
-                                    },
-                                    {
-                                        "shell_command": "open -a 'Zoom.us'"
-                                    }
-                                ],
-                                "type": "basic"
                             }
                         ]
                     }
@@ -944,20 +875,6 @@
                     },
                     "ignore": true,
                     "manipulate_caps_lock_led": false,
-                    "simple_modifications": [],
-                    "treat_as_built_in_keyboard": false
-                },
-                {
-                    "disable_built_in_keyboard_if_exists": false,
-                    "fn_function_keys": [],
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "is_pointing_device": true,
-                        "product_id": 45091,
-                        "vendor_id": 1133
-                    },
-                    "ignore": true,
-                    "manipulate_caps_lock_led": true,
                     "simple_modifications": [],
                     "treat_as_built_in_keyboard": false
                 }
